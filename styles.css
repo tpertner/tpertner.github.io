@@ -24,7 +24,7 @@
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
-html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; overflow-x: hidden; }
 
 body {
   font-family: var(--font-body);
@@ -35,6 +35,8 @@ body {
   font-size: 17px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 a { color: inherit; text-decoration: none; }
@@ -192,11 +194,14 @@ a { color: inherit; text-decoration: none; }
 .script-heading {
   font-family: var(--font-display);
   font-weight: 600;
-  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-size: clamp(1.85rem, 7.5vw, 4.5rem);
   line-height: 1.1;
   color: var(--ink);
   margin-bottom: 2.5rem;
   letter-spacing: -0.005em;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
 }
 .script-heading.centered { text-align: center; }
 
@@ -550,6 +555,8 @@ a { color: inherit; text-decoration: none; }
     line-height: 1;
   }
   .hero-tag { font-size: 0.85rem; }
+  .script-heading { font-size: clamp(1.85rem, 8vw, 2.75rem); }
+  .work-card-title { font-size: clamp(1.75rem, 7.5vw, 2.5rem); }
   .framework-grid { grid-template-columns: 1fr; }
   .contact-links .dot { display: inline-block; }
 }

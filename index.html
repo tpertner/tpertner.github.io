@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Pertner Logic — Systems, Relationships, and the Space Between</title>
-<meta name="description" content="Pertner Logic is a technology consulting practice by Tracy Pertner, exploring systems and relationships through unconventional frameworks and tooling." />
+<meta name="description" content="Pertner Logic is an AI consulting practice by Tracy Pertner — original frameworks and tooling for AI behavior testing, alignment evaluation, and relational boundary erosion." />
 <meta name="author" content="Tracy Pertner" />
 
 <!-- Open Graph -->
@@ -43,7 +43,7 @@
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
-html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; overflow-x: hidden; }
 
 body {
   font-family: var(--font-body);
@@ -54,6 +54,8 @@ body {
   font-size: 17px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 a { color: inherit; text-decoration: none; }
@@ -211,11 +213,14 @@ a { color: inherit; text-decoration: none; }
 .script-heading {
   font-family: var(--font-display);
   font-weight: 600;
-  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-size: clamp(1.85rem, 7.5vw, 4.5rem);
   line-height: 1.1;
   color: var(--ink);
   margin-bottom: 2.5rem;
   letter-spacing: -0.005em;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
 }
 .script-heading.centered { text-align: center; }
 
@@ -569,6 +574,8 @@ a { color: inherit; text-decoration: none; }
     line-height: 1;
   }
   .hero-tag { font-size: 0.85rem; }
+  .script-heading { font-size: clamp(1.85rem, 8vw, 2.75rem); }
+  .work-card-title { font-size: clamp(1.75rem, 7.5vw, 2.5rem); }
   .framework-grid { grid-template-columns: 1fr; }
   .contact-links .dot { display: inline-block; }
 }
@@ -601,7 +608,7 @@ a { color: inherit; text-decoration: none; }
 
   <div class="hero-inner">
     <h1 class="hero-title">Think&nbsp;sideways.</h1>
-    <p class="hero-tag">Systems. Relationships. The space between.</p>
+    <p class="hero-tag">AI Systems. Relationships. The space between.</p>
   </div>
 
   <div class="scroll-cue" aria-hidden="true">↓</div>
@@ -639,7 +646,7 @@ a { color: inherit; text-decoration: none; }
   <section id="work" class="section section-work">
     <div class="container">
       <p class="eyebrow centered">Philosophy, applied</p>
-      <h2 class="script-heading centered">A small thing that&nbsp;means&nbsp;a lot.</h2>
+      <h2 class="script-heading centered">A small thing that means a lot.</h2>
 
       <div class="work-card">
         <div class="work-card-label">Featured · iOS</div>
@@ -657,7 +664,7 @@ a { color: inherit; text-decoration: none; }
   <section id="frameworks" class="section section-frameworks">
     <div class="container">
       <p class="eyebrow">In development</p>
-      <h2 class="script-heading">Frameworks&nbsp;&amp;&nbsp;tooling.</h2>
+      <h2 class="script-heading">Frameworks &amp; tooling.</h2>
 
       <div class="framework-grid">
         <article class="framework-card">
